@@ -1,3 +1,4 @@
+<script>(function(){try{var h=document.head||document.getElementsByTagName('head')[0]||document.documentElement;var m=document.querySelector('meta[name="viewport"]');if(!m){m=document.createElement('meta');m.setAttribute('name','viewport');h.appendChild(m);}m.setAttribute('content','width=device-width, initial-scale=1, viewport-fit=cover');}catch(e){}})();</script>
 <title>Benz Promotion Immobilière — Résidences de haut standing à Alger</title>
 <style>
 /* ---------- Fonts (embedded, CSP-safe) ---------- */
@@ -27,8 +28,9 @@
   --font-display:'Cinzel',Georgia,'Times New Roman',serif;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--font-body);font-weight:400;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+html{scroll-behavior:smooth;overflow-x:hidden;width:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--font-body);font-weight:400;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;width:100%;max-width:100%}
+img,svg,video{max-width:100%}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{animation:none!important;transition:none!important}}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
@@ -144,7 +146,8 @@ p{margin:0}
   .hero__left::after{display:none}
   .hero__content{max-width:none;padding-right:0}
 }
-@media(max-width:600px){.hero__stats{gap:18px 26px}}
+@media(max-width:600px){.hero__stats{gap:18px 26px}.container{padding:0 20px}}
+@media(max-width:380px){.hero h1{font-size:2rem}.hero h1 .script{font-size:1.7rem}}
 
 /* ---------- Section chrome ---------- */
 .section{padding:clamp(72px,10vw,130px) 0}
@@ -265,7 +268,7 @@ p{margin:0}
 .field.full{grid-column:1/-1}
 .field label{font-size:13px;font-weight:500;color:var(--ink);letter-spacing:.02em}
 .field label .req{color:var(--gold)}
-.field input,.field select,.field textarea{font-family:var(--font-body);font-size:15px;color:var(--ink);background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:13px 15px;transition:border-color .25s,box-shadow .25s,background .25s;width:100%}
+.field input,.field select,.field textarea{font-family:var(--font-body);font-size:16px;color:var(--ink);background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:13px 15px;transition:border-color .25s,box-shadow .25s,background .25s;width:100%;max-width:100%}
 .field textarea{resize:vertical;min-height:110px}
 .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);background:#fff;box-shadow:0 0 0 4px rgba(221,139,40,.14)}
 .form .btn{width:100%;margin-top:22px}
@@ -307,7 +310,7 @@ p{margin:0}
 .appart-hero__bg img{width:100%;height:100%;object-fit:cover;object-position:center}
 .appart-hero__scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(9,16,34,.72) 0%,rgba(9,16,34,.28) 34%,rgba(9,16,34,.5) 62%,rgba(9,16,34,.92) 100%)}
 .appart-hero__in{padding:150px 0 56px;width:100%}
-.crumb{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.7);font-size:13px;letter-spacing:.02em;margin-bottom:26px}
+.crumb{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;color:rgba(255,255,255,.7);font-size:13px;letter-spacing:.02em;margin-bottom:26px}
 .crumb a{transition:color .25s}.crumb a:hover{color:var(--gold-soft)}
 .crumb b{color:#fff;font-weight:500}
 .crumb span{opacity:.5}
